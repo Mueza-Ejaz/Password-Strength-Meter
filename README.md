@@ -24,7 +24,7 @@ A simple password strength checker & generator built with Streamlit. This app he
 3️⃣ Enter a password to test its strength  
 
 
- Live Demo: Click Here 
+ Live Demo: https://password-strength-meter-4.streamlit.app/
 
 
 
