@@ -1,4 +1,4 @@
-import re
+import re # regular expressions (searching characters)
 
 def check_password_strength(password):
     score = 0
@@ -11,13 +11,13 @@ def check_password_strength(password):
         feedback.append(" Password should be at least 8 characters long.")
 
     # Upper & Lowercase Check
-    if re.search(r"[A-Z]", password) and re.search(r"[a-z]", password):
+    if re.search(r"[A-Z]", password) and re.search(r"[a-z]", password): # r = raw string
         score += 1
     else:
         feedback.append(" Include both uppercase and lowercase letters.")
 
     # Digit Check
-    if re.search(r"\d", password):
+    if re.search(r"\d", password): # \d = digits
         score += 1
     else:
         feedback.append(" Add at least one number (0-9).")
@@ -35,3 +35,8 @@ def check_password_strength(password):
         return score, "Moderate", feedback
     else:
         return score, "Weak", feedback
+
+
+
+
+
