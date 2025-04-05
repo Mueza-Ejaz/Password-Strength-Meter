@@ -2,7 +2,7 @@ import random
 import string
 
 def generate_strong_password(length=12):
-    uppercase = random.choice(string.ascii_uppercase)
+    uppercase = random.choice(string.ascii_uppercase) # ascii => American Standard Code for Information Interchange.
     lowercase = random.choice(string.ascii_lowercase)
     digit = random.choice(string.digits)
     special = random.choice("!@#$%^&*")
